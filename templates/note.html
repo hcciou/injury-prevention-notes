@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{標題}}｜傷防筆記</title>
+  <meta name="description" content="{{一句話摘要，與 data/notes.js 的 summary 相同}}">
+  <link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-title" href="../../index.html">傷防筆記</a>
+      <span class="site-sub">Injury Prevention Notes</span>
+    </div>
+  </header>
+
+  <main class="wrap note">
+    <nav class="breadcrumb"><a href="../../index.html">首頁</a> › {{課程名}}</nav>
+
+    <div class="note-head">
+      <h1>{{標題}}</h1>
+      <div class="meta">
+        <span>{{課程名}}</span>
+        <time datetime="{{YYYY-MM-DD}}">{{YYYY-MM-DD}}</time>
+        <span class="tag">{{標籤一}}</span>
+        <span class="tag">{{標籤二}}</span>
+      </div>
+    </div>
+
+    <section id="key">
+      <h2>一句話重點</h2>
+      <p>{{一到兩句，不看內文也能帶走的結論}}</p>
+    </section>
+
+    <section id="concepts">
+      <h2>核心概念</h2>
+      <h3>{{小節標題}}</h3>
+      <p>{{內容}}</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>{{欄}}</th><th>{{欄}}</th></tr></thead>
+          <tbody><tr><td>{{格}}</td><td>{{格}}</td></tr></tbody>
+        </table>
+      </div>
+      <div class="callout warn"><strong>常見錯誤：</strong>{{內容}}</div>
+    </section>
+
+    <section id="field">
+      <h2>連回現場</h2>
+      <p>{{至少一個具體情境：救護、野外或防災教學現場怎麼用這個概念}}</p>
+    </section>
+
+    <section id="quiz">
+      <h2>自我檢測</h2>
+      <details><summary>{{題目一}}</summary><p>{{答案}}</p></details>
+      <details><summary>{{題目二}}</summary><p>{{答案}}</p></details>
+      <details><summary>{{題目三}}</summary><p>{{答案}}</p></details>
+    </section>
+
+    <section id="refs">
+      <h2>參考資料</h2>
+      <ul>
+        <li>{{作者（年份）。標題。出處。}}</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="../../index.html">← 回首頁</a></p>
+      <p>本站為個人學習筆記，不是醫療指引。</p>
+    </div>
+  </footer>
+</body>
+</html>
